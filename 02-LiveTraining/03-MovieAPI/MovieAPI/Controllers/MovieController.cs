@@ -52,11 +52,13 @@ namespace MovieAPI.Controllers
                 DBCon.Close();
             }
 
+            // this removes any titles that dont match searchstring
             if (!String.IsNullOrEmpty(searchString))
             {
                 output = output.Where(s => s.Title.Contains(searchString)).ToList();
             }
 
+            // this removes any records that dont match the genere search
             if (!String.IsNullOrEmpty(movieGenre))
             {
                 output = output.Where(m => m.Genre == movieGenre).ToList();
