@@ -41,6 +41,8 @@ namespace Grades
             grades.Add(grade);
         }
 
+        public string Name;
+
         // if public is not defined, it is assumed private in C#
         private List<float> grades;
     }

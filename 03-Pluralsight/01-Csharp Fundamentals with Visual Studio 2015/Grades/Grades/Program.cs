@@ -27,6 +27,16 @@ namespace Grades
             Console.WriteLine(stats.HighestGrade);
             Console.WriteLine(stats.LowestGrade);
 
+            /*
+            // this logic shows how pointers/references work for classes
+            GradeBook g1 = new GradeBook();
+            GradeBook g2 = g1;
+
+            g1 = new GradeBook(); // if this was not here, g2 would show g1's name
+            g1.Name = "Katy's grade book";
+            Console.WriteLine(g2.Name);
+            */
+
             Console.ReadLine();
         }
     }
