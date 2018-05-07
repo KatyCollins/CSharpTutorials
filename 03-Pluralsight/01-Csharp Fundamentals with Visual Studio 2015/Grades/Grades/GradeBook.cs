@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Grades
 {
-    class GradeBook
+    // if you dont specify this, it will be marked "internal"
+    // that means you wont be able to run unit tests on this
+    // public = everywhere
+    // private = only in same class
+    // internal = only in same assembly
+    public class GradeBook
     {
         // ctor <tab><tab> creates blank constructor
         public GradeBook()
